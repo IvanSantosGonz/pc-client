@@ -10,3 +10,17 @@ body{
 	padding:10%;
 	opacity:0.6;
 }
+
+
+#jornada{
+	text-align:left;
+}
+
+#jornada td{
+	padding:10%;
+	line-height:110%;
+	vertical-align:middle;
+	}
+
+.hora{
+}
