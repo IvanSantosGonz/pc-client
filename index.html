@@ -53,25 +53,8 @@
                         <ul>
    						<li>Liga
                         	<ul>
-   								<li><a href="#CalendarioLigaTF">Primera Categoría</a></li>     
-   								<li>Tercera Categoria
-                                	<ul>
-                                        <div data-role="collapsible">
-                                            <h2>Jornada</h2>
-   											    <ul data-role="listview" data-theme="d" >
-            										<li><a href="#">1</a></li>
-                                                    <li><a href="#">2</a></li>
-                                                    <li><a href="#">3</a></li>
-                                                    <li><a href="#">4</a></li>
-                                                    <li><a href="#">5</a></li>
-                                                    <li><a href="#">6</a></li>
-                                                    <li><a href="#">7</a></li>
-                                                    <li><a href="#">8</a></li>
-                                                    <li><a href="#">9</a></li>
-        										</ul>
-    									</div><!-- /collapsible -->
-  									</ul>
-                                </li>
+   								<li><a href="#CalendarioLigaTF1">Primera Categoría</a></li>     
+   								<li><a href="#CalendarioLigaTF3">Tercera Categoría</a></li> 
   							</ul>
                         </li>
   					</ul>
@@ -305,7 +288,7 @@
 	</div>
 	
 	
-	<div data-role="page" id="CalendarioLigaTF" >
+	<div data-role="page" id="CalendarioLigaTF1" >
 
 		<div data-role="header" data-position="fixed">
 			<h1>Puntal Canario</h1>
@@ -314,8 +297,32 @@
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1','Liga');" >Jornada Actual</a>
-            <a href="#" data-role="button"  data-theme="a" onclick="myFunction();" >Calendario Completo</a>       
-            <div id = "jornada">
+            <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','1','Liga');" >Calendario Completo</a>       
+            <div class = "jornada">
+            </div>
+            
+ 		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>El pié</h4>
+		</div>
+		
+	</div>
+    
+    
+    
+    <div data-role="page" id="CalendarioLigaTF3" >
+
+		<div data-role="header" data-position="fixed">
+			<h1>Puntal Canario</h1>
+            <a href="#logo" data-icon="home">Home</a>
+        </div>
+  				
+		<div data-role="content">
+			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3','Liga');" >Jornada Actual</a>
+            <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','3','Liga');" >Calendario Completo</a>       
+            <div class = "jornada">
+            	
             </div>
             
  		</div>
