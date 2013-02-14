@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="css/themes/pc-v1.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
   <link rel="stylesheet" href="css/style.css" />  
+  <link rel="stylesheet" href="css/FeedEk.css" />  
   <script src="js/jquery-1.8.2.min.js"></script> 
   <script src="js/jquery.mobile-1.2.0.min.js"></script> 
   <script src="js/pc.js"></script>
+  <script type="text/javascript" src="js/FeedEk.js"></script>
 
 </head>
 <body> 
@@ -19,9 +21,9 @@
 			<h1>Puntal Canario</h1>
 <div data-role="navbar">
 		<ul>
-			<li><a href="#home">Calendarios</a></li>
+			<li><a href="#Calendarios">Calendarios</a></li>
 			<li><a href="#">Clasificaciones</a></li>
-			<li><a href="#">Noticias</a></li>
+			<li><a href="#" onclick="rss();">Noticias</a></li>
             <li><a href="#">Videos</a></li>
 		</ul>
 	</div><!-- /navbar -->
@@ -29,7 +31,9 @@
   				
 		<div data-role="content">
         	
-            <a href="#home" data-role="button" data-theme="a">Entrar</a>
+            <div id="divRss" align="center">
+            
+			</div>
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
@@ -38,7 +42,7 @@
 		
 	</div>
     
-    	<div data-role="page" id="home">
+    <div data-role="page" id="Calendarios">
 
 		<div data-role="header" data-position="fixed">
 			<a href="#logo" data-role="button" data-icon="home">Home</a>
