@@ -41,6 +41,7 @@ function Actual(Isla,Categoria,Competicion) {
   		var items = [];
 		var todos = $('.jornada');
 		todos.append("<h2>" + "Jornada "+ actual + "</h2>");
+		todos.append("<table cellpadding = '3'>");
 		for (var i=0;i<data.length;i++){
     			
 			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + " "  + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
