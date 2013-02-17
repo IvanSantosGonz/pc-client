@@ -14,9 +14,9 @@
       jQuery.fn.jcorgYoutubeUserChannelEmbed = function(settings) {
         settings = jQuery.extend({
           mode:'thumbnails', // list || thumbnails
-          videoWidth:'640',
-          thumbnailWidth:'30%',
-          videoWidth:'80%',
+          videoWidth:'400',
+          thumbnailWidth:'30',
+          videoWidth:'400',
           showTitle:true,
           maxResults:20,
           startIndex:1,
@@ -108,7 +108,7 @@
                        vidViews=    (entry && entry.yt$statistics ? entry.yt$statistics.viewCount : 0);
                        vid = '<a href="'+vidLink+'" rel="prettyPhoto[gallery]" title="'+vidTitle+'" class="jcorg-yt-thumbnail"><img src="'+vidThumb+'" alt="'+vidTitle+'" width="'+settings.thumbnailWidth+'" height="'+(parseInt(settings.thumbnailWidth/1.34))+'" /></a>'; 
                        if(settings.showTitle) {
-                          vid = vid+'<div class="jcorg-yt-thumbnail-title" style="width:'+settings.thumbnailWidth+'px !important">'+vidTitle+'</div>';
+                          vid = vid+'<div class="jcorg-yt-thumbnail-title" style="width:'+settings.thumbnailWidth+'% !important">'+vidTitle+'</div>';
                        }
                        jQuery("<li/>").html(vid).appendTo(listObj);
 

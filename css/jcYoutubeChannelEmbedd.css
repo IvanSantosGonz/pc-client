@@ -21,13 +21,20 @@ ul.jcorg-yt-thumbnails li{
 .jcorg-yt-thumbnail-title {
 	height:5%;
 	font-family:Calibri,arial;
-	font-size:1em;
+	font-size:0.5em;
 	text-align:center;
 }
 /*channel embedd list style */
 
 .jcorg-yt-list-title {
 	font-family:Calibri,arial;
-	font-size:15em;
+	font-size:0.5em;
 	line-height:200%;
+}
+
+
+.jcorg-yt-list-video object {
+	width:80%;
+	height:80%;
+
 }
