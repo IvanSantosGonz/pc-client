@@ -1,0 +1,33 @@
+ul.jcorg-yt-thumbnails,.jcorg-yt-list {
+	list-style:none;
+	clear:both;
+	margin:0;
+	padding:0;
+}
+ul.jcorg-yt-thumbnails li{
+	line-height:150%;
+	margin:2%;
+}
+.jcorg-yt-thumbnail img:hover{
+    border:10px solid rgba(113,187,16,0.8);
+	border-radius:10px;
+	opacity:1;
+}
+.jcorg-yt-thumbnail img{
+	border:10px solid rgba(100,100,100,0.5);
+	border-radius:10px;	
+	opacity:0.9;
+}
+.jcorg-yt-thumbnail-title {
+	height:5%;
+	font-family:Calibri,arial;
+	font-size:1em;
+	text-align:center;
+}
+/*channel embedd list style */
+
+.jcorg-yt-list-title {
+	font-family:Calibri,arial;
+	font-size:15em;
+	line-height:200%;
+}

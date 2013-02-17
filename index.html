@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
   <title>Puntal Canario</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +13,13 @@
   <script src="js/pc.js"></script>
   <script type="text/javascript" src="js/FeedEk.js"></script>
   <script type="text/javascript" src="js/jquery.youtubeChannel.js"></script>
+  <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
 
-
-    
-
+  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="js/jcorgYoutubeUserChannelEmbed.js"></script>
+  <link rel="stylesheet" href="https://github.com/twitter/bootstrap.git" type="text/css" />
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+  <link rel="stylesheet" href="css/jcYoutubeChannelEmbedd.css" type="text/css" />
 </head>
 <body> 
 	<div data-role="page" id="logo">
@@ -98,24 +100,21 @@
             <div id="youtube-channel" align="center">
             	
             </div>
-   		 	<script>
-   				 $(function() {
-        			$('#youtube-channel').youtubeChannel({
-          			username: 'origencanario',
-		            startIndex: 1,
-		            maxResults: 5,
-		            orderBy: 'published'
-			        });
-			    });
-			</script>
-
+            
+            
+            <script>
+            $("#youtube-channel").jcorgYoutubeUserChannelEmbed({mode:'thumbnails', maxResults:'5'});
+	   		</script>
 		</div>
+        
+        
+        
 		
 		<div data-role="footer" data-position="fixed">
 			<h4>El pié</h4>
 		</div>
-		
-	</div>
+    </div>
+        
     
     <div data-role="page" id="Calendarios">
 
