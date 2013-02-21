@@ -43,7 +43,7 @@ function Actual(Isla,Categoria,Competicion) {
 		todos.append("<h2>" + "Jornada "+ actual + "</h2>");
 		for (var i=0;i<data.length;i++){
     			
-			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + " "  + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
+			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
 			 
   		}
 	});

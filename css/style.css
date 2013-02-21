@@ -3,6 +3,7 @@ body{
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:50%;
+	font-family: Arial, cursive;
 }
 
 #select{
@@ -12,7 +13,9 @@ body{
 }
 
 
-.jornada{
+.jornada h2{
+	font-family: 'McLaren', cursive;
+	font-size: 2em;
 
 }
 
@@ -20,11 +23,16 @@ body{
 	padding:3%;
 	line-height:110%;
 	vertical-align:middle;
-	}
+}
 
-table, th, td
-{
-padding:10px;
+.jornada td{
+	padding:5%;
+	
+}
+
+
+table, td{
+	padding:5%;
 }
 
 
@@ -57,9 +65,6 @@ padding:10px;
 	
 }
 
-
-
-
 th
 {
 background-color:green;
@@ -68,8 +73,6 @@ color:white;
 
 .hora{
 }
-
-
 
 #youtube-channel{
     width: 80%;
@@ -81,4 +84,30 @@ color:white;
     clear: both;
 	left:10%;
 	top: 20%;
+}
+
+
+
+
+#demo {
+    background-color: #000;
+}
+
+.ui-content h1{
+
+	font-family: 'McLaren', cursive;
+	font-size: 3em;
+	text-align: center;
+	
+}
+
+.ui-title {
+	font-family: 'McLaren', cursive;
+	font-size: 5em;
+
+}
+
+.title h1{
+	font-size: 1.2em;
+	text-align: center;
 }

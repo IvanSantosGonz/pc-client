@@ -3,7 +3,7 @@
   <title>Puntal Canario</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/themes/pc-v1.min.css" />
+  <link rel="stylesheet" href="css/themes/pc-v1.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
   <link rel="stylesheet" href="css/style.css" />  
   <link rel="stylesheet" href="css/FeedEk.css" />  
@@ -12,14 +12,19 @@
   <script src="js/pc.js"></script>
   <script type="text/javascript" src="js/FeedEk.js"></script>
   <script type="text/javascript" src="js/jquery.youtube.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Snowburst+One|Fjalla+One|Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Limelight|McLaren' rel='stylesheet' type='text/css'>
+
 </head>
 <body> 
+		
 	<div data-role="page" id="logo">
 
 		<div data-role="header" data-position="fixed">
-        	
-			<h1>Puntal Canario</h1>
-			<div data-role="navbar">
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+			<div data-role="navbar" id="demo">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#">Clasificaciones</a></li>
@@ -44,7 +49,9 @@
 
 		<div data-role="header" data-position="fixed">
         	<a href="#logo" data-role="button" data-icon="home">Home</a>
-			<h1>Puntal Canario</h1>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
@@ -76,7 +83,9 @@
 
 		<div data-role="header" data-position="fixed">
 	        <a href="#logo" data-role="button" data-icon="home">Home</a>
-			<h1>Puntal Canario</h1>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
@@ -114,8 +123,10 @@
 
 		<div data-role="header" data-position="fixed">
 			<a href="#logo" data-role="button" data-icon="home">Home</a>
-			<h1>Puntal Canario</h1>
-            <div data-role="navbar">
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <div data-role="navbar">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#">Clasificaciones</a></li>
@@ -204,11 +215,14 @@
 	<div data-role="page" id="CalendarioLigaTF1" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+			<a href="#Calendarios" data-icon="back">Calendarios</a>
         </div>
   				
-		<div data-role="content">
+		<div data-role="content" >
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','1','Liga');" >Calendario Completo</a>       
             <div class = "jornada">
@@ -227,9 +241,13 @@
     <div data-role="page" id="CalendarioLigaTF3" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3','Liga');" >Jornada Actual</a>
@@ -251,9 +269,13 @@
     <div data-role="page" id="CalendarioLigaTF1J" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1Juveniles','Liga');" >Jornada Actual</a>
@@ -275,9 +297,13 @@
     <div data-role="page" id="CalendarioLigaTF3J" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3Juveniles','Liga');" >Jornada Actual</a>
@@ -299,9 +325,13 @@
         <div data-role="page" id="CalendarioLigaTF1C" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1Cadetes','Liga');" >Jornada Actual</a>
@@ -322,9 +352,13 @@
     <div data-role="page" id="CalendarioLigaTF3C" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3Cadetes','Liga');" >Jornada Actual</a>
@@ -346,9 +380,13 @@
     <div data-role="page" id="CalendarioLigaGC1" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','1','Liga');" >Jornada Actual</a>
@@ -370,9 +408,13 @@
     <div data-role="page" id="CalendarioLigaGC3A" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','3A','Liga');" >Jornada Actual</a>
@@ -395,9 +437,13 @@
     <div data-role="page" id="CalendarioLigaGC3B" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','3B','Liga');" >Jornada Actual</a>
@@ -419,9 +465,13 @@
     <div data-role="page" id="CalendarioCopaLP1" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+			<a href="#Calendarios" data-icon="back">Calendarios</a>
+ 
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','1','Copa');" >Jornada Actual</a>
@@ -444,9 +494,13 @@
     <div data-role="page" id="CalendarioCopaLPJ" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','juveniles','Copa');" >Jornada Actual</a>
@@ -469,9 +523,13 @@
     <div data-role="page" id="CalendarioCopaLPC" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','cadetes','Copa');" >Jornada Actual</a>
@@ -494,9 +552,13 @@
     <div data-role="page" id="CalendarioLigaLZ" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Lanzarote','2','Liga');" >Jornada Actual</a>
@@ -518,9 +580,13 @@
     <div data-role="page" id="CalendarioLigaFT" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+   			<a href="#Calendarios" data-icon="back">Calendarios</a>
+
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Fuerteventura','2','Liga');" >Jornada Actual</a>
@@ -543,9 +609,12 @@
     <div data-role="page" id="CalendarioLigaHR" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>Puntal Canario</h1>
-            <a href="#logo" data-icon="home">Home</a>
-        </div>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <a href="#logo" data-icon="home">Home</a>
+        	<a href="#Calendarios" data-icon="back">Calendarios</a>
+		</div>
   				
 		<div data-role="content">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('El Hierro','3','Liga');" >Jornada Actual</a>
@@ -568,8 +637,10 @@
 
 		<div data-role="header" data-position="fixed">
 			<a href="#logo" data-role="button" data-icon="home">Home</a>
-			<h1>Puntal Canario</h1>
-            <div data-role="navbar">
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+	        <div data-role="navbar">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
