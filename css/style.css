@@ -28,6 +28,38 @@ padding:10px;
 }
 
 
+
+.youtube .carousel {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+    z-index: 3;
+	background-color:#71bb10;
+}
+
+.youtube .thumbnail {
+    margin: 2px;
+    width: 100%;
+    border: 1px solid black; 
+	 
+}
+
+.youtube iframe.player {
+    width: 80%;
+    height: 100%;  
+    overflow: auto;
+    border: 0;
+    background-color: #71bb10;
+	position: absolute;
+    right: 20%;
+	
+}
+
+
+
+
 th
 {
 background-color:green;
@@ -35,4 +67,18 @@ color:white;
 }
 
 .hora{
+}
+
+
+
+#youtube-channel{
+    width: 50%;
+    height: 40%;
+    overflow: hidden;
+    background-color: #71bb10;
+    position: absolute;
+    border: solid 2px #71bb10;
+    clear: both;
+	left:25%;
+	top: 30%;
 }

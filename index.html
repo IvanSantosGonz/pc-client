@@ -11,12 +11,7 @@
   <script src="js/jquery.mobile-1.2.0.min.js"></script> 
   <script src="js/pc.js"></script>
   <script type="text/javascript" src="js/FeedEk.js"></script>
-  <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
-  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-  <script type="text/javascript" src="js/jcorgYoutubeUserChannelEmbed.js"></script>
-  <link rel="stylesheet" href="https://github.com/twitter/bootstrap.git" type="text/css" />
-  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
-  <link rel="stylesheet" href="css/jcYoutubeChannelEmbedd.css" type="text/css" />
+  <script type="text/javascript" src="js/jquery.youtube.js"></script>
 </head>
 <body> 
 	<div data-role="page" id="logo">
@@ -100,8 +95,10 @@
             
             
             <script>
-            $("#youtube-channel").jcorgYoutubeUserChannelEmbed({mode:'list', maxResults:'5'});
-	   		</script>
+           $(function() {
+             $('#youtube-channel').youTubeChannel({user:'origencanario'});
+           });
+        	</script>
 		</div>
         
         
