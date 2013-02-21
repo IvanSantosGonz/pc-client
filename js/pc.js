@@ -53,3 +53,19 @@ function Actual(Isla,Categoria,Competicion) {
 }
 
 
+
+
+
+function Clasificacion(Isla,Categoria,Competicion) {
+	var todos = $('.clasificacion');
+ 	$.getJSON("https://pcan-ivansantos.rhcloud.com/clasificacions.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&callback=?", function(data) {
+  		var items = [];
+		
+		for (var i=0;i<data.length;i++){
+			todos.append("<tr><td>" + data[i].Equipo + "</td><td>" + data[i].Luchas  +  "</td><td>"  + data[i].Victorias + "</td><td>" + " "  + data[i].Empates  + "</td><td>" + data[i].Derrotas + "</td><td>" + data[i].LFavor + "</td><td>" + data[i].LContra + "</td><td>" + data[i].Puntos +"</td></tr>")
+			 
+  		}
+	});
+
+}
+
