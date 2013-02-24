@@ -16,24 +16,33 @@ body{
 .jornada h2{
 	font-family: 'McLaren', cursive;
 	font-size: 2em;
-
+	color:green;
 }
 
 .jornada tr{
 	padding:3%;
 	line-height:110%;
 	vertical-align:middle;
+
 }
 
 .jornada td{
-	padding:5%;
+	padding:1%;
 	
 }
 
 
 table, td{
+
 	padding:5%;
 }
+
+th{
+
+	background-color:green;
+	color:white;
+}
+
 
 .youtube .carousel {
     width: 20%;
@@ -63,11 +72,6 @@ table, td{
 	
 }
 
-th
-{
-background-color:green;
-color:white;
-}
 
 .hora{
 }
@@ -94,7 +98,7 @@ color:white;
 .ui-content h1{
 
 	font-family: 'McLaren', cursive;
-	font-size: 3em;
+	font-size: 1em;
 	text-align: center;
 	
 }
@@ -106,7 +110,7 @@ color:white;
 }
 
 .back {
-	padding-bottom: -100%;
+	margin-bottom: -100%;
 
 }
 
@@ -120,5 +124,12 @@ color:white;
 	font-family: 'McLaren', cursive;
 	font-size: 3em;
 	margin-top: 0%;
+
+}
+
+
+.ui-title  h4{
+	font-size: 5em;
+
 
 }

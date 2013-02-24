@@ -16,7 +16,7 @@ function completo(Isla,Categoria,Competicion) {
 				 todos.append("<h2>" + "Jornada "+ data[i].Jornada + "</h2>")
 				 jorn = jorn +1;
 			 }
-			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + " "  + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
+			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
 			 
   		}
 	});
@@ -62,7 +62,7 @@ function Clasificacion(Isla,Categoria,Competicion) {
   		var items = [];
 		
 		for (var i=0;i<data.length;i++){
-			todos.append("<tr><td>" + data[i].Equipo + "</td><td>" + data[i].Luchas  +  "</td><td>"  + data[i].Victorias + "</td><td>" + " "  + data[i].Empates  + "</td><td>" + data[i].Derrotas + "</td><td>" + data[i].LFavor + "</td><td>" + data[i].LContra + "</td><td>" + data[i].Puntos +"</td></tr>")
+			todos.append("<tr><td>" + data[i].Equipo + "</td><td>" + data[i].Luchas  +  "</td><td>"  + data[i].Victorias + "</td><td>" + data[i].Empates  + "</td><td>" + data[i].Derrotas + "</td><td>" + data[i].LFavor + "</td><td>" + data[i].LContra + "</td><td>" + data[i].Puntos +"</td></tr>")
 			 
   		}
 	});
