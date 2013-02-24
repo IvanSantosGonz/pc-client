@@ -137,8 +137,9 @@
 		</div>
 
 		<div data-role="content">
-			
-            <h1>Calendarios</h1>
+			<div class="calendario">
+				<h1>Calendarios</h1>
+			</div>
 				<ul data-role="listview" data-theme="a" >
 					<li>Tenerife
                         <ul>
@@ -194,16 +195,7 @@
                         </li>
 					</ul>
 				</li>
-				<li>El Hierro
-                    <ul>
-   						<li>Liga
-                        	<ul>
-   								<li><a href="#CalendarioLigaHR">Tercera Categoría</a></li>     
-  							</ul>
-                        </li>
-					</ul>
-				</li>
-		</div>
+			</div>
 
 		<div data-role="footer" data-position="fixed">
 			<h4>El pié</h4>
@@ -219,8 +211,8 @@
         		<h1>Puntal Canario</h1>
 			</div>	
 	        <a href="#logo" data-icon="home">Home</a>
-			<a href="#Calendarios" data-icon="back">Calendarios</a>
-        </div>
+		    <a href="#Calendarios" data-icon="back" data-iconpos="notext" class="back"></a>
+		</div>
   				
 		<div data-role="content" >
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1','Liga');" >Jornada Actual</a>
@@ -708,15 +700,7 @@
                         </li>
 					</ul>
 				</li>
-				<li>El Hierro
-                    <ul>
-   						<li>Liga
-                        	<ul>
-   								<li><a href="#ClasificacionLigaHR">Tercera Categoría</a></li>     
-  							</ul>
-                        </li>
-					</ul>
-				</li>
+				
 		</div>
 
 		<div data-role="footer" data-position="fixed">

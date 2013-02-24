@@ -35,8 +35,6 @@ table, td{
 	padding:5%;
 }
 
-
-
 .youtube .carousel {
     width: 20%;
     height: 100%;
@@ -107,7 +105,20 @@ color:white;
 
 }
 
+.back {
+	padding-bottom: -100%;
+
+}
+
+
 .title h1{
 	font-size: 1.2em;
 	text-align: center;
+}
+
+.calendario h1{
+	font-family: 'McLaren', cursive;
+	font-size: 3em;
+	margin-top: 0%;
+
 }
