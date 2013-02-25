@@ -79,3 +79,17 @@ function limpiar() {
 	$(".clasificacion").empty();
 	$(".jornada").empty();
 }
+
+
+
+
+
+function lala(id) {
+	
+		var auxwidth = $(id).css("width");
+		auxwidth = auxwidth.replace('px','')
+		alert(auxwidth);
+		var auxheight = auxwidth*0.48
+		auxheight = auxheight + 'px'
+		$("#youtube-channel").css("height",auxheight);
+}

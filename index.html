@@ -29,10 +29,21 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#Videos">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(oculto)">Videos</a></li>
 				</ul>
+             
+                
 			</div><!-- /navbar -->
         </div>
+        
+        
+        <div data-role="content" >
+			
+            <div id = "oculto">
+            </div>
+            
+ 		</div>
+        
   				
 		
 		<div data-role="footer" data-position="fixed">
@@ -54,13 +65,14 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#Videos">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoN)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
         </div>
   				
 		<div data-role="content">
-        	
+        	<div id = "ocultoN">
+            </div>
             <div id="divRss" align="center">
             
 			</div>
@@ -77,6 +89,7 @@
     
     
     	<div data-role="page" id="Videos">
+       
 
 		<div data-role="header" data-position="fixed">
 	        <a href="#logo" data-role="button" data-icon="home">Home</a>
@@ -88,7 +101,7 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#Videos">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(youtube-channel)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
         </div>
@@ -102,9 +115,10 @@
             
             <script>
            $(function() {
-             $('#youtube-channel').youTubeChannel({user:'origencanario'});
-           });
+             $('#youtube-channel').youTubeChannel({user:'origencanario'});          
+			});
         	</script>
+            
 		</div>
         
         
@@ -128,12 +142,14 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#Videos">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoCalen)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div>
 
 		<div data-role="content">
+        	<div id="ocultoCalen">
+            </div>
 			<div class="calendario">
 				<h1>Calendarios</h1>
 			</div>
@@ -706,12 +722,14 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#Videos">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoClasi)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div>
 
 		<div data-role="content">
+        	<div id = "ocultoClasi">
+           	</div>
 			<div class = "clasificaciones">
            		<h1>Clasificaciones</h1>
 					<ul data-role="listview" data-theme="a" >

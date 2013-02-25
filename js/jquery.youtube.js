@@ -6,15 +6,20 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 */
 
-(function() {
+(function() {	
+    
     function createPlayer(jqe, video, options) {
-		var auxwidth = $("#youtube-channel").css("width");
-		auxwidth = auxwidth.replace('px','')
-		var auxheight = auxwidth*0.48
-		auxheight = auxheight + 'px'
-		$("#youtube-channel").css("height",auxheight);
-
-        var ifr = $('iframe', jqe);
+		var aux = $("#youtube-channel").css("height");
+		alert(aux);
+		if(aux=='0px'){
+			var auxwidth = $("#youtube-channel").css("width");
+			auxwidth = auxwidth.replace('px','')
+			var auxheight = auxwidth*0.48
+			auxheight = auxheight + 'px'
+			$("#youtube-channel").css("height",auxheight);
+		}
+        
+		var ifr = $('iframe', jqe);
         if (ifr.length === 0) {
             ifr = $('<iframe scrolling="no">');
             ifr.addClass('player');
