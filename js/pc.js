@@ -1,5 +1,5 @@
 function completo(Isla,Categoria,Competicion) {
-	
+	$(".jornada").empty();
 	$.getJSON("https://pcan-ivansantos.rhcloud.com/jornada_actuals.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" +Competicion  + "&callback=?", function(data) {
  	var actual
  	actual = data[0].Jornada;
@@ -33,6 +33,7 @@ function completo(Isla,Categoria,Competicion) {
 
 
 function Actual(Isla,Categoria,Competicion) {
+	$(".jornada").empty();
 	
 	$.getJSON("https://pcan-ivansantos.rhcloud.com/jornada_actuals.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" +Competicion  + "&callback=?", function(data) {
  	var actual
@@ -57,7 +58,10 @@ function Actual(Isla,Categoria,Competicion) {
 
 
 function Clasificacion(Isla,Categoria,Competicion) {
+	
+	$(".clasificacion").empty();
 	var todos = $('.clasificacion');
+	todos.append("<tr><td>" + "Equipo" + "</td><td>" + "Luchas"  +  "</td><td>"  + "Victorias" + "</td><td>" + "Empates"  + "</td><td>" + "Derrotas" + "</td><td>" + "LFavor" + "</td><td>" + "LContra" + "</td><td>" + "Puntos" +"</td></tr>")
  	$.getJSON("https://pcan-ivansantos.rhcloud.com/clasificacions.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&callback=?", function(data) {
   		var items = [];
 		
@@ -69,3 +73,9 @@ function Clasificacion(Isla,Categoria,Competicion) {
 
 }
 
+
+
+function limpiar() {
+	$(".clasificacion").empty();
+	$(".jornada").empty();
+}

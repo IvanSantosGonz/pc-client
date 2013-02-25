@@ -78,7 +78,6 @@ th{
 
 #youtube-channel{
     width: 80%;
-    height: 60%;
     overflow: hidden;
     background-color: #71bb10;
     position: absolute;
@@ -128,8 +127,26 @@ th{
 }
 
 
+.clasificaciones h1{
+	font-family: 'McLaren', cursive;
+	font-size: 3em;
+	margin-top: 0%;
+
+}
+
+
 .ui-title  h4{
 	font-size: 5em;
 
 
+}
+
+
+.clasificacion tr td {
+	padding:0.5em;
+}
+
+
+.jornada tr td {
+	padding:0.5em;
 }
