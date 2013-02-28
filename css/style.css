@@ -25,6 +25,7 @@ body{
 	font-family: 'McLaren', cursive;
 	font-size: 2em;
 	color:green;
+	padding-bottom:2.5%;
 }
 
 .jornada tr{
@@ -41,7 +42,7 @@ body{
 
 .clasificacion{
 	font-family: 'McLaren', cursive;
-	font-size: 1em;
+	font-size: 0.5em;
 	font-weight:bold;
 }
 
@@ -50,7 +51,7 @@ body{
 
 .clasi{
 	font-family: 'McLaren', cursive;
-	font-size: 1em;
+	font-size: 0.5em;
 	color:green;
 	font-weight:bold;
 }
@@ -137,6 +138,8 @@ th{
 }
 
 
+
+
 .title h1{
 	font-size: 1.2em;
 	text-align: center;
@@ -144,16 +147,17 @@ th{
 
 .calendario h1{
 	font-family: 'McLaren', cursive;
-	font-size: 3em;
+	font-size: 1em;
 	margin-top: 0%;
-
+	padding-bottom:2.5%;
 }
 
 
 .clasificaciones h1{
 	font-family: 'McLaren', cursive;
-	font-size: 3em;
+	font-size: 1em;
 	margin-top: 0%;
+	padding-bottom:2.5%;
 
 }
 
@@ -164,6 +168,10 @@ th{
 
 }
 
+
+.ui-navbar{
+	font-size:3%;
+}
 
 .clasificacion tr td {
 	padding:0.5em;
@@ -225,11 +233,16 @@ th{
 
 .cita{
 	position:absolute;
-	top:85%;
+	top:95%;
 	font-size:0.75em;
 }
 
 
 .title img{
 	padding-left:1%;
+}
+
+
+.ui-btn-text{
+	font-size:0.75em;
 }
