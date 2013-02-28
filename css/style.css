@@ -14,7 +14,7 @@ body{
 
 .jornada{
 	font-family: 'McLaren', cursive;
-	font-size: 1em;
+	font-size: 0.25em;
 	font-weight:bold;
 }
 
@@ -25,7 +25,8 @@ body{
 	font-family: 'McLaren', cursive;
 	font-size: 2em;
 	color:green;
-	padding-bottom:2.5%;
+	padding-bottom:0.5%;
+	padding-top:0.5%;
 }
 
 .jornada tr{
@@ -37,12 +38,13 @@ body{
 
 .jornada td{
 	padding:1%;
+	padding-bottom:0.5%;
 	
 }
 
 .clasificacion{
 	font-family: 'McLaren', cursive;
-	font-size: 0.5em;
+	font-size: 0.25em;
 	font-weight:bold;
 }
 
@@ -51,7 +53,7 @@ body{
 
 .clasi{
 	font-family: 'McLaren', cursive;
-	font-size: 0.5em;
+	font-size: 0.25em;
 	color:green;
 	font-weight:bold;
 }
