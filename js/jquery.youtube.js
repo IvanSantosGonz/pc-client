@@ -10,7 +10,6 @@ http://www.apache.org/licenses/LICENSE-2.0
     
     function createPlayer(jqe, video, options) {
 		var aux = $("#youtube-channel").css("height");
-		alert(aux);
 		if(aux=='0px'){
 			var auxwidth = $("#youtube-channel").css("width");
 			auxwidth = auxwidth.replace('px','')
@@ -104,5 +103,5 @@ http://www.apache.org/licenses/LICENSE-2.0
             });
         } 
     });
-    
+
 })();

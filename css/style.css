@@ -12,6 +12,14 @@ body{
 	opacity:0.6;
 }
 
+.jornada{
+	font-family: 'McLaren', cursive;
+	font-size: 1em;
+	font-weight:bold;
+}
+
+
+
 
 .jornada h2{
 	font-family: 'McLaren', cursive;
@@ -31,6 +39,21 @@ body{
 	
 }
 
+.clasificacion{
+	font-family: 'McLaren', cursive;
+	font-size: 1em;
+	font-weight:bold;
+}
+
+
+
+
+.clasi{
+	font-family: 'McLaren', cursive;
+	font-size: 1em;
+	color:green;
+	font-weight:bold;
+}
 
 table, td{
 
@@ -166,4 +189,47 @@ th{
 
 #ocultoClasi{
 	width:80%;
+}
+
+#Agradecimientos p{
+	padding:0.5%;
+	width:80%;
+	font-family: 'McLaren', cursive;
+	font-size: 1em;
+	line-height:2em;
+	font-weight:bold;
+}
+
+
+
+
+
+
+#Gracias{
+	padding:5%;
+	font-size:4em;
+	color:green;
+}
+
+
+
+#Contacto{
+	padding:10%;
+	width:80%;
+	font-family: 'McLaren', cursive;
+	font-size: 1em;
+	line-height:2em;
+	font-weight:bold;
+}
+
+
+.cita{
+	position:absolute;
+	top:85%;
+	font-size:0.75em;
+}
+
+
+.title img{
+	padding-left:1%;
 }

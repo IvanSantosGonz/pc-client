@@ -21,15 +21,16 @@
 	<div data-role="page" id="logo">
 
 		<div data-role="header" data-position="fixed">
-			<div class="title">
-        		<h1>Puntal Canario</h1>
+			<div class="title" align="center">
+        		
+              	<h1>Puntal Canario<IMG SRC="images/PC-icon.png" WIDTH=2% HEIGHT=2%  ALT="Puntal Canario"></h1>
 			</div>	
 			<div data-role="navbar" id="demo">
 				<ul>
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(oculto)">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(oculto)">Videos</a></li>
 				</ul>
              
                 
@@ -47,7 +48,13 @@
   				
 		
 		<div data-role="footer" data-position="fixed">
-			<h4>El pié</h4>
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="info">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="star">Agradecimientos</a>
+				</div>
+            </div>
+
 		</div>
 		
 	</div>
@@ -65,12 +72,12 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoN)">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(ocultoN)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
         </div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
         	<div id = "ocultoN">
             </div>
             <div id="divRss" align="center">
@@ -79,16 +86,25 @@
             <script>
    				 $(rss());
 		    </script>
+            
+            <div class="cita">
+            	<p>Noticias por <a href= "www.origencanario.com"> www.origencanario.com </a></p>
+            </div>
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
-			<h4>El pié</h4>
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="info">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="star">Agradecimientos</a>
+				</div>
+            </div>
 		</div>
 		
 	</div>
     
     
-    	<div data-role="page" id="Videos">
+    <div data-role="page" id="Videos">
        
 
 		<div data-role="header" data-position="fixed">
@@ -101,12 +117,12 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(youtube-channel)">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(youtube-channel)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
         </div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
         	
             <div id="youtube-channel" align="center">
             	
@@ -119,16 +135,116 @@
 			});
         	</script>
             
+            <div class="cita">
+            	<p>Videos por <a href= "www.origencanario.com"> www.origencanario.com </a></p>
+            </div>
+            
 		</div>
         
         
         
 		
 		<div data-role="footer" data-position="fixed">
-			<h4>El pié</h4>
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="info">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="star">Agradecimientos</a>
+				</div>
+            </div>
 		</div>
     </div>
         
+        
+        
+        
+    <div data-role="page" id="Agradecimientos">
+       
+
+		<div data-role="header" data-position="fixed">
+	        <a href="#logo" data-role="button" data-icon="home">Home</a>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Calendarios">Calendarios</a></li>
+					<li><a href="#Clasificaciones">Clasificaciones</a></li>
+					<li><a href="#Noticias">Noticias</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(youtube-channel)">Videos</a></li>
+				</ul>
+			</div><!-- /navbar -->
+        </div>
+  				
+		<div data-role="content" align="center">
+        	
+            <div id="contacto" align="center">
+            
+            	<p>Agradecer en primer lugar a Alexandra Rivero por su ayuda desinteresada y porque sin su apoyo y dedicación este proyecto no hubiera sido lo mismo.</p> 
+                <p>Además agradecer también el apoyo y predisposición mostrados por <a href= "www.origencanario.com"> www.origencanario.com </a>  y además felicitarles por la enorme labor de difusión que realizan.</p> 
+                <p>Por último y no por ello menos importante agredecer a todas las personas que hacen que este mundo de la lucha canaria sea como es ya que entre todos hacen posible día a día con su esfuerzo y dedicación que este nuestro deporte y parte de nuestra tradición no se pierda en el olvido.</br></p>
+             <div id ="Gracias">Gracias a Todos
+              	</div>
+           </div>
+            
+		</div>
+        
+        
+        
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="plus">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="plus">Agradecimientos</a>
+				</div>
+            </div>
+		</div>
+    </div>
+    
+    
+    
+        <div data-role="page" id="Contacto">
+       
+
+		<div data-role="header" data-position="fixed">
+	        <a href="#logo" data-role="button" data-icon="home">Home</a>
+			<div class="title">
+        		<h1>Puntal Canario</h1>
+			</div>	
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Calendarios">Calendarios</a></li>
+					<li><a href="#Clasificaciones">Clasificaciones</a></li>
+					<li><a href="#Noticias">Noticias</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(youtube-channel)">Videos</a></li>
+				</ul>
+			</div><!-- /navbar -->
+        </div>
+  				
+		<div data-role="content" align="center">
+        	
+            <div id="contacto" align="center">
+            
+             <p>PuntalCanario@outlook.com</p>
+            </div>
+            
+		</div>
+        
+        
+        
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="info">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="star">Agradecimientos</a>
+				</div>
+            </div>
+		</div>
+    </div>
+    
+    
+    
     
     <div data-role="page" id="Calendarios">
 
@@ -142,12 +258,12 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoCalen)">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(ocultoCalen)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div>
 
-		<div data-role="content">
+		<div data-role="content" align="center">
         	<div id="ocultoCalen">
             </div>
 			<div class="calendario">
@@ -252,7 +368,7 @@
 		<div data-role="content" >
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','1','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             </div>
             
  		</div>
@@ -276,10 +392,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','3','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -304,10 +420,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1Juveniles','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','1Juveniles','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -332,10 +448,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3Juveniles','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','3Juveniles','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -360,10 +476,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','1Cadetes','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','1Cadetes','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -387,10 +503,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Tenerife','3Cadetes','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Tenerife','3Cadetes','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -415,10 +531,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','1','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Gran Canaria','1','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -443,10 +559,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','3A','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Gran Canaria','3A','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -472,10 +588,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Gran Canaria','3B','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Gran Canaria','3B','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -500,10 +616,10 @@
  
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','2','Copa');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('La Palma','2','Copa');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -529,10 +645,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','juveniles','Copa');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('La Palma','juveniles','Copa');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -558,10 +674,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','cadetes','Copa');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('La Palma','cadetes','Copa');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -585,10 +701,10 @@
  
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('La Palma','2','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('La Palma','2','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -612,10 +728,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Lanzarote','2','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Lanzarote','2','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -640,10 +756,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('Fuerteventura','2','Liga');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('Fuerteventura','2','Liga');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -666,10 +782,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('InterinsularLF','2A','InterinsularLF');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('InterinsularLF','2A','InterinsularLF');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -693,10 +809,10 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Actual('InterinsularLF','2B','InterinsularLF');" >Jornada Actual</a>
             <a href="#" data-role="button"  data-theme="a" onclick="completo('InterinsularLF','2B','InterinsularLF');" >Calendario Completo</a>       
-            <div class = "jornada">
+            <div class = "jornada" align="center">
             	
             </div>
             
@@ -722,12 +838,12 @@
 					<li><a href="#Calendarios">Calendarios</a></li>
 					<li><a href="#Clasificaciones">Clasificaciones</a></li>
 					<li><a href="#Noticias">Noticias</a></li>
-            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';lala(ocultoClasi)">Videos</a></li>
+            		<li><a href="#" id= "videos" onClick="location.href = 'index.html#Videos';vid(ocultoClasi)">Videos</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div>
 
-		<div data-role="content">
+		<div data-role="content" align="center">
         	<div id = "ocultoClasi">
            	</div>
 			<div class = "clasificaciones">
@@ -737,7 +853,7 @@
                      	   <ul>
    							<li>Liga
 	                        	<ul>
-   									<li><a href="#ClasificacionLigaTF1">Primera Categoría</a></li>     
+   									<li><a href="#ClasificacionLigaTF1">Primera Categoría </a></li>     
    									<li><a href="#ClasificacionLigaTF3">Tercera Categoría</a></li> 
             	                    <li><a href="#ClasificacionLigaTF1J">Juveniles Primera Categoría</a></li>
                 	                <li><a href="#ClasificacionLigaTF3J">Juveniles Tercera Categoría</a></li>
@@ -814,7 +930,12 @@
 		</div>
 
 		<div data-role="footer" data-position="fixed">
-			<h4>El pié</h4>
+			<div data-role="footer" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal"  align="center">
+            	<div data-role="controlgroup" data-type="horizontal">
+					<a href="#Contacto" data-role="button" data-icon="info">Contacto</a>
+					<a href="#Agradecimientos" data-role="button" data-icon="star">Agradecimientos</a>
+				</div>
+            </div>
 		</div>
 		
 	</div>
@@ -832,7 +953,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','1','Liga');" >Clasificación</a>      		
             <div class = "clasificacion">
@@ -859,7 +980,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','3','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -885,7 +1006,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','1Juveniles','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -912,7 +1033,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','3Juveniles','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -939,7 +1060,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','1Cadetes','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -967,7 +1088,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Tenerife','3Cadetes','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -995,7 +1116,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Gran Canaria','1','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1021,7 +1142,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Gran Canaria','3A','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1047,7 +1168,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Gran Canaria','3B','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1074,7 +1195,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('La Palma','2','Copa');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1102,7 +1223,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('La Palma','Juveniles','Copa');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1130,7 +1251,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('La Palma','Cadetes','Copa');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1157,7 +1278,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Lanzarote','2','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1184,7 +1305,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Fuerteventura','2','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1211,7 +1332,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('InterinsularLF','2A','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1238,7 +1359,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('InterinsularLF','2B','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1266,7 +1387,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Gran Canaria','1','Copa');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1294,7 +1415,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('Gran Canaria','3','Copa');" >Clasificación</a>      
             <div class = "clasificacion">
             	
@@ -1322,7 +1443,7 @@
 
 		</div>
   				
-		<div data-role="content">
+		<div data-role="content" align="center">
 			<a href="#" data-role="button"  data-theme="a" onclick="Clasificacion('La Palma','1','Liga');" >Clasificación</a>      
             <div class = "clasificacion">
             	

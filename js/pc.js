@@ -1,7 +1,8 @@
 function completo(Isla,Categoria,Competicion) {
 	$(".jornada").empty();
+	data = []
 	$.getJSON("https://pcan-ivansantos.rhcloud.com/jornada_actuals.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" +Competicion  + "&callback=?", function(data) {
- 	var actual
+ 	var actual = 0
  	actual = data[0].Jornada;
 	
  	$.getJSON("https://pcan-ivansantos.rhcloud.com/calendariocompleto.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&callback=?", function(data) {
@@ -10,7 +11,7 @@ function completo(Isla,Categoria,Competicion) {
 		for (var i=0;i<data.length;i++){
 			 var todos = $('.jornada');
 			    if (jorn != data[i].Jornada){
-					if (actual >= data[i].Jornada ){
+					if (actual > jorn){
 						$(".jornada h2").css("color","#900");
 					}
 				 todos.append("<h2>" + "Jornada "+ data[i].Jornada + "</h2>")
@@ -41,11 +42,14 @@ function Actual(Isla,Categoria,Competicion) {
  	$.getJSON("https://pcan-ivansantos.rhcloud.com/calendarios.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&&Jornada=" + actual + "&callback=?", function(data) {
   		var items = [];
 		var todos = $('.jornada');
-		todos.append("<h2>" + "Jornada "+ actual + "</h2>");
-		for (var i=0;i<data.length;i++){
-    			
+		if (actual == 'fin'){
+			todos.append("<h2>" + "Competición Finalizada" + "</h2>");
+		}
+		else{
+			todos.append("<h2>" + "Jornada "+ actual + "</h2>");
+			for (var i=0;i<data.length;i++){	
 			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
-			 
+			}
   		}
 	});
 
@@ -61,7 +65,7 @@ function Clasificacion(Isla,Categoria,Competicion) {
 	
 	$(".clasificacion").empty();
 	var todos = $('.clasificacion');
-	todos.append("<tr><td>" + "Equipo" + "</td><td>" + "Luchas"  +  "</td><td>"  + "Victorias" + "</td><td>" + "Empates"  + "</td><td>" + "Derrotas" + "</td><td>" + "LFavor" + "</td><td>" + "LContra" + "</td><td>" + "Puntos" +"</td></tr>")
+	todos.append("<tr class = 'clasi'><td>" + "Equipo" + "</td><td>" + "Luchas"  +  "</td><td>"  + "Victorias" + "</td><td>" + "Empates"  + "</td><td>" + "Derrotas" + "</td><td>" + "LFavor" + "</td><td>" + "LContra" + "</td><td>" + "Puntos" +"</td></tr>")
  	$.getJSON("https://pcan-ivansantos.rhcloud.com/clasificacions.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&callback=?", function(data) {
   		var items = [];
 		
@@ -84,11 +88,10 @@ function limpiar() {
 
 
 
-function lala(id) {
+function vid(id) {
 	
 		var auxwidth = $(id).css("width");
 		auxwidth = auxwidth.replace('px','')
-		alert(auxwidth);
 		var auxheight = auxwidth*0.48
 		auxheight = auxheight + 'px'
 		$("#youtube-channel").css("height",auxheight);
