@@ -27,12 +27,6 @@ function completo(Isla,Categoria,Competicion) {
 }
 
 
-
-
-
-
-
-
 function Actual(Isla,Categoria,Competicion) {
 	$(".jornada").empty();
 	
