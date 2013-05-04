@@ -27,6 +27,37 @@ function completo(Isla,Categoria,Competicion) {
 }
 
 
+
+function completo2(Isla,Categoria,Competicion) {
+	$(".jornada").empty();
+	data = []
+
+	
+ 	$.getJSON("https://pcan-ivansantos.rhcloud.com/calendariocompleto.json?Isla=" + Isla +"&&Categoria=" + Categoria + "&&Competicion=" + Competicion + "&callback=?", function(data) {
+		var jorn = 0;
+		var items = [];
+		var todos = $('.jornada');
+		todos.append("<h2>" + "Ida de Semifinales" + "</h2>")
+		for (var i=0;i<2;i++){ 
+			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
+			} 
+			
+	    todos.append("<h2>" + "Vuelta de Semifinales" + "</h2>")
+		for (var i=2;i<4;i++){ 
+			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
+			} 
+			
+			todos.append("<h2>" + "Final" + "</h2>")
+		for (var i=4;i<5;i++){ 
+			 todos.append("<tr><td>"+  data[i].Lucha  +  "</td><td>"  + data[i].Fecha + "</td><td>" + data[i].Hora  + "</td><td>" + data[i].Resultado + "</td></tr>")
+			} 
+
+});
+
+}
+
+
+
 function Actual(Isla,Categoria,Competicion) {
 	$(".jornada").empty();
 	
